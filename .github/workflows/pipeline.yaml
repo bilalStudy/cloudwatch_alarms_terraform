@@ -37,8 +37,8 @@ jobs:
     name: "Terraform"
     needs: build_docker_image
     runs-on: ubuntu-latest
-    working-directory: ./infra
     env:
+      working-directory: ./infra
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       NOTIFICATION_MAIL: ${{ secrets.NOTIFICATION_MAIL}}
