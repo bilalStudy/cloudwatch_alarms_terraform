@@ -52,7 +52,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2
 
       - name: Change Working Directory to /infra
-        run: cd /infra
+        run: cd ./infra
 
       - name: Terraform Init
         id: init
